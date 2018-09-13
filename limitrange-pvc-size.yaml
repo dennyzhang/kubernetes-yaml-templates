@@ -1,0 +1,13 @@
+# https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/
+# In this example, a PVC requesting 10Gi of storage would be rejected because it exceeds the 2Gi max.
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: storagelimits
+spec:
+  limits:
+  - type: PersistentVolumeClaim
+    max:
+      storage: 2Gi
+    min:
+      storage: 1Gi
