@@ -42,29 +42,31 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 *** Security
 | Name                                        | Summary                         |
 |---------------------------------------------+---------------------------------|
+| Serviceaccount: basic usage                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/serviceaccount-default.yaml][serviceaccount-default.yaml]]     |
 | Pod security: block --privileged            | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity-no-priviledged.yaml][podsecurity-no-priviledged.yaml]] |
 | Pod security: advanced usage                | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity-advanced.yaml][podsecurity-advanced.yaml]]       |
 | Network security: Whitelist traffic control | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity-pod.yaml][networksecurity-pod.yaml]]        |
-
-*** Deployment
-| Name                             | Summary                                                             |
-|----------------------------------+---------------------------------------------------------------------|
-| Deployment nginx with 2 replicas | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment-nginx.yaml][deployment-nginx.yaml]]                                               |
-| Statefulset yaml examples        | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-nginx.yaml][statefulset-nginx.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-single-mysql][statefulset-single-mysql]]                    |
-| Statefulset yaml examples        | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-replicated-cassandra.yaml][statefulset-replicated-cassandra.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-replicated-mysql][statefulset-replicated-mysql]] |
-| Serviceaccount yaml examples     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/serviceaccount-default.yaml][serviceaccount-default.yaml]]                                         |
-
-*** Service
-| Name                  | Summary                                              |
-|-----------------------+------------------------------------------------------|
-| Service yaml examples | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service-clusterip-nginx.yaml][service-clusterip-nginx.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service-cassandra.yaml][service-cassandra.yaml]] |
-| Service yaml examples | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service-clusterip-nginx.yaml][service-clusterip-nginx.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service-cassandra.yaml][service-cassandra.yaml]] |
 
 *** Resource Segregation
 | Name                                      | Summary                             |
 |-------------------------------------------+-------------------------------------|
 | LimitRange: PVC size                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/limitrange-pvc-size.yaml][limitrange-pvc-size.yaml]]            |
 | ResourceQuota: pvc count and storage size | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/limitrange-pvc-cumulative-size.yaml][limitrange-pvc-cumulative-size.yaml]] |
+
+*** Deployment
+| Name                                 | Summary                               |
+|--------------------------------------+---------------------------------------|
+| Deployment nginx with 2 replicas     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment-nginx.yaml][deployment-nginx.yaml]]                 |
+| Statefulset: nginx                   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-nginx.yaml][statefulset-nginx.yaml]]                |
+| Statefulset: mysql                   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-single-mysql][statefulset-single-mysql]]              |
+| Statefulset: single cassandra        | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-replicated-cassandra.yaml][statefulset-replicated-cassandra.yaml]] |
+| Statefulset: cassandra with replicas | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-replicated-mysql][statefulset-replicated-mysql]]          |
+
+*** Service
+| Name                          | Summary                      |
+|-------------------------------+------------------------------|
+| Service: nginx with clusterip | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service-clusterip-nginx.yaml][service-clusterip-nginx.yaml]] |
+| Service: cassandra            | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service-cassandra.yaml][service-cassandra.yaml]]       |
 
 ** More Resources
  License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
