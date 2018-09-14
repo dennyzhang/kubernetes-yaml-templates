@@ -24,6 +24,10 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 
 See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 ** Yaml Templates
+Note: for each yaml in below, you can find a related URL at the top. 
+
+e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/limitrange-pvc-size.yaml#L1][an example]].
+
 *** Pod
 | Name                                             | Summary                    |
 |--------------------------------------------------+----------------------------|
@@ -31,7 +35,7 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 | Pod: basic nginx                                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod-nginx.yaml][pod-nginx.yaml]]             |
 | Pod: enable http healthcheck                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod-healthcheck-nginx.yaml][pod-healthcheck-nginx.yaml]] |
 | Pod: sidecar with git clone                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod-gitclone.yaml][pod-gitclone.yaml]]          |
-| Pod: get events in between of pod start and stop | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod-handlers.yaml][pod-handlers.yaml]]          |
+| Pod's events whenever it get started or stoppped | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod-handlers.yaml][pod-handlers.yaml]]          |
 
 *** Storage
 | Name                 | Summary                               |
@@ -40,12 +44,12 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 | Use minikube storage | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-replicated-cassandra.yaml][statefulset-replicated-cassandra.yaml]] |
 
 *** Security
-| Name                                        | Summary                         |
-|---------------------------------------------+---------------------------------|
-| Serviceaccount: basic usage                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/serviceaccount-default.yaml][serviceaccount-default.yaml]]     |
-| Pod security: block --privileged            | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity-no-priviledged.yaml][podsecurity-no-priviledged.yaml]] |
-| Pod security: advanced usage                | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity-advanced.yaml][podsecurity-advanced.yaml]]       |
-| Network security: Whitelist traffic control | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity-pod.yaml][networksecurity-pod.yaml]]        |
+| Name                                         | Summary                         |
+|----------------------------------------------+---------------------------------|
+| Serviceaccount: basic usage                  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/serviceaccount-default.yaml][serviceaccount-default.yaml]]     |
+| Pod security: prohibit pod with --privileged | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity-no-priviledged.yaml][podsecurity-no-priviledged.yaml]] |
+| Pod security: advanced usage                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity-advanced.yaml][podsecurity-advanced.yaml]]       |
+| Network security: Whitelist traffic control  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity-pod.yaml][networksecurity-pod.yaml]]        |
 
 *** Resource Segregation
 | Name                                      | Summary                             |
@@ -54,9 +58,13 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 | ResourceQuota: pvc count and storage size | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/limitrange-pvc-cumulative-size.yaml][limitrange-pvc-cumulative-size.yaml]] |
 
 *** Deployment
+| Name                             | Summary               |
+|----------------------------------+-----------------------|
+| Deployment nginx with 2 replicas | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment-nginx.yaml][deployment-nginx.yaml]] |
+
+*** Statefulset
 | Name                                 | Summary                               |
 |--------------------------------------+---------------------------------------|
-| Deployment nginx with 2 replicas     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment-nginx.yaml][deployment-nginx.yaml]]                 |
 | Statefulset: nginx                   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-nginx.yaml][statefulset-nginx.yaml]]                |
 | Statefulset: mysql                   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-single-mysql][statefulset-single-mysql]]              |
 | Statefulset: single cassandra        | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset-replicated-cassandra.yaml][statefulset-replicated-cassandra.yaml]] |
