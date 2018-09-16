@@ -38,19 +38,23 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Pod's events whenever it get started or stoppped | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]      |
 
 *** Storage
-| Name                 | Summary                                           |
-|----------------------+---------------------------------------------------|
-| Use local volume     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pod-volume-empty-redis.yaml][storage/pod-volume-empty-redis.yaml]]               |
-| volume: mysql        | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pv-mysql.yaml][storage/pv-mysql.yaml]]                             |
-| Use minikube storage | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] |
+| Name                                      | Summary                                           |
+|-------------------------------------------+---------------------------------------------------|
+| Use local volume                          | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pod-volume-empty-redis.yaml][storage/pod-volume-empty-redis.yaml]]               |
+| volume: mysql                             | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pv-mysql.yaml][storage/pv-mysql.yaml]]                             |
+| Mount k8s worker node's /var/run to a Pod | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/volume-mount-localpath.yaml][storage/volume-mount-localpath.yaml]]               |
+| Use minikube storage                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] |
 
 *** Security
-| Name                                         | Summary                                  |
-|----------------------------------------------+------------------------------------------|
-| Serviceaccount: basic usage                  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/serviceaccount-default.yaml][security/serviceaccount-default.yaml]]     |
-| Pod security: prohibit pod with --privileged | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-no-priviledged.yaml][security/podsecurity-no-priviledged.yaml]] |
-| Pod security: advanced usage                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-advanced.yaml][security/podsecurity-advanced.yaml]]       |
-| Network security: Whitelist traffic control  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-pod.yaml][security/networksecurity-pod.yaml]]        |
+| Name                                          | Summary                                        |
+|-----------------------------------------------+------------------------------------------------|
+| Serviceaccount: basic usage                   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/serviceaccount-default.yaml][security/serviceaccount-default.yaml]]           |
+| Pod security: prohibit pod with --privileged  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-no-priviledged.yaml][security/podsecurity-no-priviledged.yaml]]       |
+| Pod security: advanced usage                  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-advanced.yaml][security/podsecurity-advanced.yaml]]             |
+| Network security: Whitelist traffic control   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-pod.yaml][security/networksecurity-pod.yaml]]              |
+| Network security: Allow all ingress           | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall-ingress.yaml][security/networksecurity-denyall-ingress.yaml]]  |
+| Network security: Deny all ingress            | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-allowall-ingress.yaml][security/networksecurity-allowall-ingress.yaml]] |
+| Network security: Deny all ingress and egress | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall.yaml][security/networksecurity-denyall.yaml]]          |
 
 *** Resource Segregation
 | Name                                      | Summary                                   |
