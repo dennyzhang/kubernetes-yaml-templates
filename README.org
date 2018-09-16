@@ -29,13 +29,13 @@ Note: for each yaml in below, you can find a related URL at the top.
 e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml#L1][an example]]
 
 *** Pod
-| Name                                             | Summary                    |
-|--------------------------------------------------+----------------------------|
-| Pod: dummy with deadloop                         | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]]         |
-| Pod: basic nginx                                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]]         |
-| Pod: enable http healthcheck                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]] |
-| Pod: sidecar with git clone                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]      |
-| Pod's events whenever it get started or stoppped | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]      |
+| Name                                             | Summary                                |
+|--------------------------------------------------+----------------------------------------|
+| Pod: basic                                       | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]] |
+| Pod: enable http healthcheck                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]]         |
+| Pod: sidecar with git clone                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]                  |
+| Pod: add alias to /etc/hosts                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]               |
+| Pod's events whenever it get started or stoppped | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]                  |
 
 *** Storage
 | Name                                      | Summary                                           |
@@ -55,6 +55,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Network security: Allow all ingress           | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall-ingress.yaml][security/networksecurity-denyall-ingress.yaml]]  |
 | Network security: Deny all ingress            | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-allowall-ingress.yaml][security/networksecurity-allowall-ingress.yaml]] |
 | Network security: Deny all ingress and egress | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall.yaml][security/networksecurity-denyall.yaml]]          |
+| Network security: a comprehensive example     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-complicated.yaml][security/networksecurity-complicated.yaml]]      |
 
 *** Resource Segregation
 | Name                                      | Summary                                   |

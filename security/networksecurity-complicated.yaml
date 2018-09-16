@@ -1,0 +1,41 @@
+# https://kubernetes.io/docs/concepts/services-networking/network-policies/
+# For db pods, the ingress traffic of port 6379
+#     Only allow ingress traffic from source ip of 172.17.0.0/16, excluding 172.17.1.0/24
+#     Or the pods from myproject namespace, or pods in current namespace with label of "role=frontend"
+#
+#     The egress traffic
+#         It can only goes to port 5978 of 10.0.0.0/24
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: test-network-policy
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      role: db
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - ipBlock:
+        cidr: 172.17.0.0/16
+        except:
+        - 172.17.1.0/24
+    - namespaceSelector:
+        matchLabels:
+          project: myproject
+    - podSelector:
+        matchLabels:
+          role: frontend
+    ports:
+    - protocol: TCP
+      port: 6379
+  egress:
+  - to:
+    - ipBlock:
+        cidr: 10.0.0.0/24
+    ports:
+    - protocol: TCP
+      port: 5978
