@@ -23,12 +23,12 @@
 File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.com/DennyZhang/kubernetes-yaml-templates][this repo]].
 
 See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
-** Yaml Templates
+
 Note: for each yaml in below, you can find a related URL at the top. 
 
 e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml#L1][an example]]
 
-*** Pod
+** Pod
 | Name                                             | Summary                                |
 |--------------------------------------------------+----------------------------------------|
 | Pod: basic                                       | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]] |
@@ -37,7 +37,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Pod: add alias to /etc/hosts                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]               |
 | Pod's events whenever it get started or stoppped | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]                  |
 
-*** Storage
+** Storage
 | Name                                      | Summary                                           |
 |-------------------------------------------+---------------------------------------------------|
 | Use local volume                          | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pod-volume-empty-redis.yaml][storage/pod-volume-empty-redis.yaml]]               |
@@ -45,7 +45,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Mount k8s worker node's /var/run to a Pod | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/volume-mount-localpath.yaml][storage/volume-mount-localpath.yaml]]               |
 | Use minikube storage                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] |
 
-*** Security
+** Security
 
 | Name                                               | Summary                                               |
 |----------------------------------------------------+-------------------------------------------------------|
@@ -53,7 +53,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Pod security: prohibit pod with --privileged       | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-no-priviledged.yaml][security/podsecurity-no-priviledged.yaml]]              |
 | Pod security: advanced usage                       | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-advanced.yaml][security/podsecurity-advanced.yaml]]                    |
 
-*** Security - NetworkPolicy
+** Security - NetworkPolicy
 | Name                                           | Summary                                               |
 |------------------------------------------------+-------------------------------------------------------|
 | GitHub network policy examples                 | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub Repo: ahmetb/kubernetes-network-policy-recipes]] |
@@ -66,19 +66,19 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Deny all ingress traffic from other namespaces | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-deny-othernamespaces.yaml][security/networksecurity-deny-othernamespaces.yaml]]    |
 | Deny all egress traffic except DNS             | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyegress-exceptdns.yaml][security/networksecurity-denyegress-exceptdns.yaml]]    |
 
-*** Resource Segregation
+** Quota & Limits
 | Name                                      | Summary                                   |
 |-------------------------------------------+-------------------------------------------|
 | LimitRange: PVC size                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml][quota/limitrange-pvc-size.yaml]]            |
 | ResourceQuota: pvc count and storage size | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] |
 
-*** Deployment
+** Deployment
 | Name                         | Summary                          |
 |------------------------------+----------------------------------|
 | Deploy nginx with 2 replicas | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-nginx.yaml][deployment/deployment-nginx.yaml]] |
 | Deploy mysql                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-mysql.yaml][deployment/deployment-mysql.yaml]] |
 
-*** Statefulset
+** Statefulset
 | Name                                 | Summary                                           |
 |--------------------------------------+---------------------------------------------------|
 | Statefulset: nginx                   | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-nginx.yaml][statefulset/statefulset-nginx.yaml]]                |
@@ -86,7 +86,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Statefulset: single cassandra        | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] |
 | Statefulset: cassandra with replicas | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-mysql][statefulset/statefulset-replicated-mysql]]          |
 
-*** Service
+** Service
 | Name                          | Summary                              |
 |-------------------------------+--------------------------------------|
 | Service: nginx with clusterip | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-clusterip-nginx.yaml][service/service-clusterip-nginx.yaml]] |
