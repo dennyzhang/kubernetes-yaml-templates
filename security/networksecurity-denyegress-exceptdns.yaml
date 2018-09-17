@@ -1,0 +1,15 @@
+# https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/
+# nginx pods only allow ingress traffic from foo pods
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: access-nginx
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: foo
