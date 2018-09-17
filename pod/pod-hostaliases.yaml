@@ -15,9 +15,7 @@ spec:
     - "foo.remote"
     - "bar.remote"
   containers:
-  - name: cat-hosts
+  - name: dummy-hosts
     image: busybox
-    command:
-    - cat
-    args:
-    - "/etc/hosts"
+    args: [/bin/sh, -c,
+            'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done']

@@ -1,0 +1,18 @@
+# https://github.com/kubernetes/community/blob/2780e1b37cac622b0d622208b246c60bfefd171c/contributors/design-proposals/network/network-policy.md#behavior
+# Allow TCP 443 from any source in Bob's namespaces.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-tcp-443
+spec:
+  podSelector:            
+    matchLabels:
+      role: frontend 
+  ingress:
+    - ports:
+        - protocol: TCP
+          port: 443 
+      from:
+        - namespaceSelector:
+            matchLabels:
+              user: bob 
