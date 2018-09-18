@@ -1,0 +1,20 @@
+# https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/
+# https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/
+apiVersion: v1
+kind: Pod
+metadata:
+  name: command-demo
+  labels:
+    purpose: demonstrate-command
+spec:
+  containers:
+  - name: command-demo-container
+    image: debian
+    command: ["printenv"]
+    args: ["HOSTNAME", "KUBERNETES_PORT", "DEMO_GREETING", "DEMO_FAREWELL"]
+    env:
+      - name: DEMO_GREETING
+        value: "Hello from the environment"
+      - name: DEMO_FAREWELL
+        value: "Such a sweet sorrow"
+  restartPolicy: OnFailure
