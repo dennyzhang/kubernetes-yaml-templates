@@ -1,0 +1,36 @@
+# https://kubernetes.io/docs/tasks/inject-data-application/podpreset/
+# You can use a PodPreset object to inject information like secrets,
+#    volume mounts, and environment variables etc into pods at creation time.
+# Create a podpreset with volume type of emptydir 
+# The new PodPreset will act upon any pod that has label role: frontend
+apiVersion: settings.k8s.io/v1alpha1
+kind: PodPreset
+metadata:
+  name: allow-database
+spec:
+  selector:
+    matchLabels:
+      role: frontend
+  env:
+    - name: DB_PORT
+      value: "6379"
+  volumeMounts:
+    - mountPath: /cache
+      name: cache-volume
+  volumes:
+    - name: cache-volume
+      emptyDir: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: website
+  labels:
+    app: website
+    role: frontend
+spec:
+  containers:
+    - name: website
+      image: nginx
+      ports:
+        - containerPort: 80
