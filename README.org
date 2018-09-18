@@ -29,76 +29,77 @@ Note: for each yaml in below, you can find a related URL at the top.
 e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml#L1][an example]]
 
 ** Pod
-| Name                                             | Summary                                |
-|--------------------------------------------------+----------------------------------------|
-| Pod: basic                                       | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]], [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]] |
-| Pod: enable http healthcheck                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]]         |
-| Pod: sidecar with git clone                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]                  |
-| Pod: add alias to /etc/hosts                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]               |
-| Pod's events whenever it get started or stoppped | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]                  |
-| kubectl/kurbernetes command cheatsheet            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]            |
+| Yaml                           | Summary                                          |
+|--------------------------------+--------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]]             | Pod: basic                                       |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]]             | Pod: basic                                       |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]] | Pod: enable http healthcheck                     |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]          | Pod: sidecar with git clone                      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]       | Pod: add alias to /etc/hosts                     |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]          | Pod's events whenever it get started or stoppped |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]    | kubectl/kurbernetes command cheatsheet           |
 
 ** Storage
-| Name                                  | Summary                                           |
-|---------------------------------------+---------------------------------------------------|
-| Use local volume                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pod-volume-empty-redis.yaml][storage/pod-volume-empty-redis.yaml]]               |
-| volume: mysql                         | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pv-mysql.yaml][storage/pv-mysql.yaml]]                             |
-| Mount k8s worker local folder to Pods | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/volume-mount-localpath.yaml][storage/volume-mount-localpath.yaml]]               |
-| Use minikube storage                  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] |
-| kubectl/kurbernetes command cheatsheet | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                       |
+| Yaml                                              | Summary                                |
+|---------------------------------------------------+----------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pod-volume-empty-redis.yaml][storage/pod-volume-empty-redis.yaml]]               | Use local volume                       |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/pv-mysql.yaml][storage/pv-mysql.yaml]]                             | volume: mysql                          |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/storage/volume-mount-localpath.yaml][storage/volume-mount-localpath.yaml]]               | Mount k8s worker local folder to Pods  |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Use minikube storage                   |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                       | kubectl/kurbernetes command cheatsheet |
 
 ** Security
 
-| Name                                         | Summary                                  |
-|----------------------------------------------+------------------------------------------|
-| Serviceaccount: basic usage                  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/serviceaccount-default.yaml][security/serviceaccount-default.yaml]]     |
-| Pod security: prohibit pod with --privileged | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-no-priviledged.yaml][security/podsecurity-no-priviledged.yaml]] |
-| Pod security: advanced usage                 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-advanced.yaml][security/podsecurity-advanced.yaml]]       |
-| kubectl/kurbernetes command cheatsheet        | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]              |
+| Yaml                                     | Summary                                  |
+|------------------------------------------+----------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/serviceaccount-default.yaml][security/serviceaccount-default.yaml]]     | Serviceaccount: basic usage                  |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-no-priviledged.yaml][security/podsecurity-no-priviledged.yaml]] | Pod security: prohibit pod with --privileged |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/podsecurity-advanced.yaml][security/podsecurity-advanced.yaml]]       | Pod security: advanced usage                 |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]              | kubectl/kurbernetes command cheatsheet       |
 
 ** Security - NetworkPolicy
-| Name                                           | Summary                                               |
-|------------------------------------------------+-------------------------------------------------------|
-| Allow all ingress                              | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall-ingress.yaml][security/networksecurity-denyall-ingress.yaml]]         |
-| Deny all ingress                               | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-allowall-ingress.yaml][security/networksecurity-allowall-ingress.yaml]]        |
-| Deny all ingress and egress                    | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall.yaml][security/networksecurity-denyall.yaml]]                 |
-| Whitelist traffic control                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-pod.yaml][security/networksecurity-pod.yaml]]                     |
-| A comprehensive network policy example         | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-complicated.yaml][security/networksecurity-complicated.yaml]]             |
-| Allow TCP 443 from one namespace               | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-port.yaml][security/networksecurity-port.yaml]]                    |
-| Deny all ingress traffic from other namespaces | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-deny-othernamespaces.yaml][security/networksecurity-deny-othernamespaces.yaml]]    |
-| Deny all egress traffic except DNS             | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyegress-exceptdns.yaml][security/networksecurity-denyegress-exceptdns.yaml]]    |
-| GitHub network policy examples                 | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub Repo: ahmetb/kubernetes-network-policy-recipes]] |
-| kubectl/kurbernetes command cheatsheet          | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                           |
+| Yaml                                                  | Summary                                        |
+|-------------------------------------------------------+------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall-ingress.yaml][security/networksecurity-denyall-ingress.yaml]]         | Allow all ingress                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-allowall-ingress.yaml][security/networksecurity-allowall-ingress.yaml]]        | Deny all ingress                               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall.yaml][security/networksecurity-denyall.yaml]]                 | Deny all ingress and egress                    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-pod.yaml][security/networksecurity-pod.yaml]]                     | Whitelist traffic control                      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-complicated.yaml][security/networksecurity-complicated.yaml]]             | A comprehensive network policy example         |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-port.yaml][security/networksecurity-port.yaml]]                    | Allow TCP 443 from one namespace               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-deny-othernamespaces.yaml][security/networksecurity-deny-othernamespaces.yaml]]    | Deny all ingress traffic from other namespaces |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyegress-exceptdns.yaml][security/networksecurity-denyegress-exceptdns.yaml]]    | Deny all egress traffic except DNS             |
+| [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub Repo: ahmetb/kubernetes-network-policy-recipes]] | GitHub network policy examples                 |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                           | kubectl/kurbernetes command cheatsheet         |
 
 ** Quota & Limits
-| Name                                      | Summary                                   |
+| Yaml                                      | Summary                                   |
 |-------------------------------------------+-------------------------------------------|
-| LimitRange: PVC size                      | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml][quota/limitrange-pvc-size.yaml]]            |
-| ResourceQuota: pvc count and storage size | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] |
-| kubectl/kurbernetes command cheatsheet     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml][quota/limitrange-pvc-size.yaml]]            | LimitRange: PVC size                      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] | ResourceQuota: pvc count and storage size |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]               | kubectl/kurbernetes command cheatsheet    |
 
 ** Deployment
-| Name                                  | Summary                          |
-|---------------------------------------+----------------------------------|
-| Deploy nginx with 2 replicas          | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-nginx.yaml][deployment/deployment-nginx.yaml]] |
-| Deploy mysql                          | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-mysql.yaml][deployment/deployment-mysql.yaml]] |
-| kubectl/kurbernetes command cheatsheet | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]      |
+| Yaml                             | Summary                            |
+|----------------------------------+----------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-nginx.yaml][deployment/deployment-nginx.yaml]] | Deploy nginx with 2 replicas           |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-mysql.yaml][deployment/deployment-mysql.yaml]] | Deploy mysql                           |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]      | kubectl/kurbernetes command cheatsheet |
 
 ** Statefulset
-| Name                                  | Summary                                           |
-|---------------------------------------+---------------------------------------------------|
-| Statefulset: nginx                    | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-nginx.yaml][statefulset/statefulset-nginx.yaml]]                |
-| Statefulset: mysql                    | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-single-mysql][statefulset/statefulset-single-mysql]]              |
-| Statefulset: single cassandra         | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] |
-| Statefulset: cassandra with replicas  | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-mysql][statefulset/statefulset-replicated-mysql]]          |
-| kubectl/kurbernetes command cheatsheet | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                       |
+| Yaml                                              | Summary                            |
+|---------------------------------------------------+----------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-nginx.yaml][statefulset/statefulset-nginx.yaml]]                | Statefulset: nginx                     |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-single-mysql][statefulset/statefulset-single-mysql]]              | Statefulset: mysql                     |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Statefulset: single cassandra          |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-mysql][statefulset/statefulset-replicated-mysql]]          | Statefulset: cassandra with replicas   |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                       | kubectl/kurbernetes command cheatsheet |
 
 ** Service
-| Name                                   | Summary                              |
-|----------------------------------------+--------------------------------------|
-| Service: nginx with clusterip          | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-clusterip-nginx.yaml][service/service-clusterip-nginx.yaml]] |
-| Service: cassandra                     | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       |
-| kubectl/kurbernetes command cheatsheet | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]          |
+| Yaml                                 | Summary                                |
+|--------------------------------------+----------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-clusterip-nginx.yaml][service/service-clusterip-nginx.yaml]] | Service: nginx with clusterip          |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       | Service: cassandra                     |
+| [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]          | kubectl/kurbernetes command cheatsheet |
 
 ** More Resources
  License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
