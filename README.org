@@ -29,17 +29,17 @@ Note: for each yaml in below, you can find a related URL at the top.
 e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml#L1][an example]]
 
 ** Pod
-| Yaml                           | Summary                                                     |
-|--------------------------------+-------------------------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]]             | Start a dummy pod with a dead sleep loop                    |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-environment-var.yaml][pod/pod-environment-var.yaml]]   | Start a pod passing environment variables                   |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-secrets.yaml][pod/pod-secrets.yaml]]           | Pod use secrets as either volumes and environment variables |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]]             | Start a pod of sample app(nginx)                            |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]] | Start pod with tcp and http healthcheck                     |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]          | Pod: sidecar with git clone                                 |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]       | Pod: add alias to /etc/hosts                                |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]          | Pod's events whenever it get started or stoppped            |
-| Links                          | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                                 |
+| Yaml                           | Summary                                                    |
+|--------------------------------+------------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]]             | Start a dummy pod with a dead sleep loop                   |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-environment-var.yaml][pod/pod-environment-var.yaml]]   | Start a pod passing environment variables                  |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-secrets.yaml][pod/pod-secrets.yaml]]           | Pod use secrets as either volumes or environment variables |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]]             | Start a pod of sample app(nginx)                           |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]] | Start pod with tcp and http healthcheck                    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]          | Pod: sidecar with git clone                                |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]       | Pod: add alias to /etc/hosts                               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]          | Pod's events whenever it get started or stoppped           |
+| Links                          | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                                |
 
 ** Storage
 | Yaml                                              | Summary                               |
@@ -60,17 +60,18 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Links                                    | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                  |
 
 ** Security - NetworkPolicy
-| Yaml                                               | Summary                                                                |
-|----------------------------------------------------+------------------------------------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall-ingress.yaml][security/networksecurity-denyall-ingress.yaml]]      | Allow all ingress                                                      |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-allowall-ingress.yaml][security/networksecurity-allowall-ingress.yaml]]     | Deny all ingress                                                       |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall.yaml][security/networksecurity-denyall.yaml]]              | Deny all ingress and egress                                            |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-pod.yaml][security/networksecurity-pod.yaml]]                  | Whitelist traffic control                                              |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-complicated.yaml][security/networksecurity-complicated.yaml]]          | A comprehensive network policy example                                 |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-port.yaml][security/networksecurity-port.yaml]]                 | Allow TCP 443 from one namespace                                       |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-deny-othernamespaces.yaml][security/networksecurity-deny-othernamespaces.yaml]] | Deny all ingress traffic from other namespaces                         |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyegress-exceptdns.yaml][security/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS                                     |
-| Links                                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]], [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]] |
+| Yaml                                               | Summary                                        |
+|----------------------------------------------------+------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall-ingress.yaml][security/networksecurity-denyall-ingress.yaml]]      | Allow all ingress                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-allowall-ingress.yaml][security/networksecurity-allowall-ingress.yaml]]     | Deny all ingress                               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyall.yaml][security/networksecurity-denyall.yaml]]              | Deny all ingress and egress                    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-pod.yaml][security/networksecurity-pod.yaml]]                  | Whitelist traffic control                      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-complicated.yaml][security/networksecurity-complicated.yaml]]          | A comprehensive network policy example         |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-port.yaml][security/networksecurity-port.yaml]]                 | Allow TCP 443 from one namespace               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-deny-othernamespaces.yaml][security/networksecurity-deny-othernamespaces.yaml]] | Deny all ingress traffic from other namespaces |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/security/networksecurity-denyegress-exceptdns.yaml][security/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS             |
+| Links                                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                    |
+| Links                                              | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]]      |
 
 ** Quota & Limits
 | Yaml                                      | Summary                                   |
