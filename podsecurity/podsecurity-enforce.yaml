@@ -1,0 +1,69 @@
+# https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/bindings.yaml
+# restricted-psp-user grants access to use the restricted PSP.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: restricted-psp-user
+rules:
+- apiGroups:
+  - policy
+  resources:
+  - podsecuritypolicies
+  resourceNames:
+  - restricted
+  verbs:
+  - use
+---
+# https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/policies.yaml
+# https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: restricted
+spec:
+  privileged: false
+  fsGroup:
+    rule: RunAsAny
+  runAsUser:
+    rule: MustRunAsNonRoot
+  seLinux:
+    rule: RunAsAny
+  supplementalGroups:
+    rule: RunAsAny
+  volumes:
+  - 'emptyDir'
+  - 'secret'
+  - 'downwardAPI'
+  - 'configMap'
+  - 'persistentVolumeClaim'
+  - 'projected'
+  hostPID: false
+  hostIPC: false
+  hostNetwork: false
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: restricted-psp-users
+subjects:
+- kind: Group
+  apiGroup: rbac.authorization.k8s.io
+  name: restricted-psp-users
+roleRef:
+   apiGroup: rbac.authorization.k8s.io
+   kind: ClusterRole
+   name: restricted-psp-user
+---
+# edit grants edit role to the groups
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: edit
+subjects:
+- kind: Group
+  apiGroup: rbac.authorization.k8s.io
+  name: restricted-psp-users
+roleRef:
+   apiGroup: rbac.authorization.k8s.io
+   kind: ClusterRole
+   name: edit
