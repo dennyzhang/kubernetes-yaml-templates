@@ -42,13 +42,13 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Links                          | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                                |
 
 ** Volume
-| Yaml                                              | Summary                               |
-|---------------------------------------------------+---------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/pod-volume-empty-redis.yaml][volume/pod-volume-empty-redis.yaml]]               | Use local volume                      |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/pv-mysql.yaml][volume/pv-mysql.yaml]]                             | volume: mysql                         |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]]               | Mount k8s worker local folder to Pods |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Use minikube volume                  |
-| Links                                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]           |
+| Yaml                                              | Summary                                   |
+|---------------------------------------------------+-------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-manual-pv.yaml][volume/volume-manual-pv.yaml]]                      | Create pv first, then pvc                 |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]]                | Mount local folder to pods                |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]                       | Create a empty folder, then mount to pods |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Use minikube volume                       |
+| Links                                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]               |
 
 ** Security
 
