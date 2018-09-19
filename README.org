@@ -45,7 +45,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Yaml                                              | Summary                                   |
 |---------------------------------------------------+-------------------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-manual-pv.yaml][volume/volume-manual-pv.yaml]]                      | Create pv first, then pvc                 |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]]                | Mount local folder to pods                |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]]                | Mount a local folder to pods              |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]                       | Create a empty folder, then mount to pods |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Use minikube volume                       |
 | Links                                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]               |
