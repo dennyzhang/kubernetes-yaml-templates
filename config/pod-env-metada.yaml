@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dummy-controller
+  namespace: myns
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dummy-controller
+    spec:
+      containers:
+      - name: dummy-controller
+        image: my/dummy-controller
+        imagePullPolicy: Always
+        env:
+        - name: NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace

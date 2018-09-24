@@ -1,0 +1,40 @@
+# https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+# kubectl exec -it security-context-demo -c demo1 touch /data/demo/test.log
+# kubectl exec -it security-context-demo -c demo1 -- ls -l /data/demo/test.log
+# ,-----------
+# |   kubectl exec -it security-context-demo -- ls -l /data/demo/test.log
+# | -rw-r--r-- 1 1000 2000 0 Sep 19 16:18 /data/demo/test.log
+# `-----------
+# kubectl exec -it security-context-demo -c demo2 touch /tmp/test.log
+# kubectl exec -it security-context-demo -c demo2 -- ls -l /tmp/test.log
+# ,-----------
+# |    kubectl exec -it security-context-demo -c demo2 -- ls -l /tmp/test.log
+# | -rw-r--r--    1 2000     root             0 Sep 19 16:38 /tmp/test.log
+# `-----------
+apiVersion: v1
+kind: Pod
+metadata:
+  name: security-context-demo
+spec:
+  securityContext:
+    runAsUser: 1000
+    fsGroup: 2000
+  volumes:
+  - name: sec-ctx-vol
+    emptyDir: {}
+  containers:
+  - name: demo1
+    image: gcr.io/google-samples/node-hello:1.0
+    volumeMounts:
+    - name: sec-ctx-vol
+      mountPath: /data/demo
+    securityContext:
+      allowPrivilegeEscalation: false
+  - name: demo2
+    image: busybox
+    args: [/bin/sh, -c,
+            'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done']
+    securityContext:
+      # configure security context at container level, instead of pod level
+      runAsUser: 2000
+      allowPrivilegeEscalation: false

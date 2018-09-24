@@ -1,4 +1,4 @@
-* Kubernets Yaml Templates                                       :Kubernetes:
+* Kubernetes Yaml Templates                                      :Kubernetes:
 :PROPERTIES:
 :type:     kubernetes
 :export_file_name: kubernetes-yaml-templates.pdf
@@ -16,9 +16,8 @@
 <a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
 #+END_HTML
 
-- PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]]
+- PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/kubernetes/][kubernetes]]
 - Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
-- Category: [[https://cheatsheet.dennyzhang.com/category/kubernetes/][kubernetes]]
 
 File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.com/DennyZhang/kubernetes-yaml-templates][this repo]].
 
@@ -32,7 +31,6 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Yaml                              | Summary                                                    |
 |-----------------------------------+------------------------------------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-dummy.yaml][pod/pod-dummy.yaml]]                | Start a dummy pod with a dead sleep loop                   |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-environment-var.yaml][pod/pod-environment-var.yaml]]      | Start a pod passing environment variables                  |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-nginx.yaml][pod/pod-nginx.yaml]]                | Start a pod of sample app(nginx)                           |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-initcontainer-sysctl.yaml][pod/pod-initcontainer-sysctl.yaml]] | Use initContainer to run sysctl, when starting a Pod       |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-healthcheck-nginx.yaml][pod/pod-healthcheck-nginx.yaml]]    | Start pod with tcp and http healthcheck                    |
@@ -41,6 +39,12 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]          | Pod: add alias to /etc/hosts                               |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]             | Pod's events whenever it get started or stoppped           |
 | Links                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                                |
+
+** Configmap/Envs
+| Yaml                            | Summary                                   |
+|---------------------------------+-------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-environment-var.yaml][config/pod-environment-var.yaml]] | Start a pod passing environment variables |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-env-metada.yaml][config/pod-env-metada.yaml]]      | Expose metadata to pods                   |
 
 ** Volume
 | Yaml                               | Summary                                                             |
@@ -60,6 +64,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 ** Security - PodSecurityPolicy
 | Yaml                                    | Summary                                                         |
 |-----------------------------------------+-----------------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/securitycontext-user.yaml][podsecurity/securitycontext-user.yaml]]   | Configure userid, at both pod and container levels              |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-privileged.yaml][podsecurity/podsecurity-privileged.yaml]] | Create pod security with privileged access                      |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-restricted.yaml][podsecurity/podsecurity-restricted.yaml]] | Create pod security with restricted access, then apply it later |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-enforce.yaml][podsecurity/podsecurity-enforce.yaml]]    | Enforce policy security by defining role and cluster role       |
