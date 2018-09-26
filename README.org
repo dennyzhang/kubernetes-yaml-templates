@@ -136,7 +136,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 #+LATEX_HEADER: \fancyhf{}
 #+LATEX_HEADER: \rhead{Updated: \today}
 #+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
-#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/.*kubernetes-yaml-templates}{GitHub: https://github.com/dennyzhang/.*kubernetes-yaml-templates}}
+#+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/kubernetes-yaml-templates}{GitHub: https://github.com/dennyzhang/kubernetes-yaml-templates}}
 #+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-slack-A4}{Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates}}
 #+AUTHOR: Denny Zhang
 #+EMAIL:  denny@dennyzhang.com
