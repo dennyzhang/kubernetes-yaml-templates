@@ -86,11 +86,12 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Links                                                     | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]]      |
 
 ** Quota & Limits
-| Yaml                                      | Summary                                   |
-|-------------------------------------------+-------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml][quota/limitrange-pvc-size.yaml]]            | LimitRange: PVC size                      |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] | ResourceQuota: pvc count and storage size |
-| Links                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]               |
+| Yaml                                      | Summary                                               |
+|-------------------------------------------+-------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml][quota/limitrange-pvc-size.yaml]]            | LimitRange: PVC size                                  |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] | ResourceQuota: pvc count and storage size             |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-mem-size.yaml][quota/limitrange-mem-size.yaml]]            | LimitRange: Pod ram usage. Then apply it to namespace |
+| Links                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                           |
 
 ** Deployment
 | Yaml                             | Summary                      |
