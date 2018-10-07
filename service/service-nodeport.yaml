@@ -1,0 +1,17 @@
+# https://kubernetes.io/docs/concepts/services-networking/ingress/
+# https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+apiVersion: v1
+kind: Service
+metadata:  
+  name: my-nodeport-wordpress
+  namespace: wordpress
+spec:
+  selector:    
+    app.kubernetes.io/name: wordpress-1
+  type: NodePort
+  ports:  
+  - name: http
+    port: 80
+    targetPort: 80
+    nodePort: 30036
+    protocol: TCP

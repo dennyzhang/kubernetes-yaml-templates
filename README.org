@@ -113,8 +113,15 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | Yaml                                 | Summary                       |
 |--------------------------------------+-------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-clusterip-nginx.yaml][service/service-clusterip-nginx.yaml]] | Service: nginx with clusterip |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-nodeport.yaml][service/service-nodeport.yaml]]        | Service: nodeport             |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-ingress.yaml][service/service-ingress.yaml]]         | Service: ingress              |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       | Service: cassandra            |
 | Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]   |
+
+** Jobs & CronJob
+| Yaml                  | Summary                         |
+|-----------------------+---------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/job/job-affinity.yaml][job/job-affinity.yaml]] | Deploy a job with node affinity |
 
 ** More Resources
  License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
@@ -149,3 +156,4 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
 #+LINK_UP:   
 #+LINK_HOME: 
+* update more link: https://github.com/uruddarraju/kubernetes-rbac-policies :noexport:

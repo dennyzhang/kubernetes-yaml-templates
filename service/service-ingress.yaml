@@ -1,0 +1,11 @@
+# https://kubernetes.io/docs/concepts/services-networking/ingress/
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test-ingress
+  namespace: wordpress
+spec:
+  backend:
+    serviceName: wordpress-1-wordpress-svc
+    servicePort: 80

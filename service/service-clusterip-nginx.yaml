@@ -1,5 +1,6 @@
 # https://kubernetes.io/docs/tutorials/k8s201/
 # Default service type: ClusterIP
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: v1
 kind: Service
 metadata:

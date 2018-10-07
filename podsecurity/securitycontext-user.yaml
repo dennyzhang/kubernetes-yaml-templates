@@ -11,6 +11,7 @@
 # |    kubectl exec -it security-context-demo -c demo2 -- ls -l /tmp/test.log
 # | -rw-r--r--    1 2000     root             0 Sep 19 16:38 /tmp/test.log
 # `-----------
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: v1
 kind: Pod
 metadata:

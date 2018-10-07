@@ -1,5 +1,6 @@
 # https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/policies.yaml
 # https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:

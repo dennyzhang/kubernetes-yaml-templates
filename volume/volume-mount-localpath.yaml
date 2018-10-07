@@ -1,5 +1,6 @@
 # https://github.com/dennyzhang/dennytest/tree/master/kubernetes/k8s_security
 # https://github.com/kubernetes/minikube/blob/master/docs/persistent_volumes.md
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: v1
 kind: Pod
 metadata:

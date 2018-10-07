@@ -1,4 +1,5 @@
 # https://kubernetes.io/docs/tutorials/stateful-application/cassandra/
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

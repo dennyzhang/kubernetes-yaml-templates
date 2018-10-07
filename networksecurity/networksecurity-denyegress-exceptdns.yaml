@@ -1,5 +1,6 @@
 # https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/
 # nginx pods only allow ingress traffic from foo pods
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 kind: NetworkPolicy
 apiVersion: networking.k8s.io/v1
 metadata:

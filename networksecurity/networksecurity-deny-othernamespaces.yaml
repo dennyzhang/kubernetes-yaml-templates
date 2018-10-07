@@ -1,5 +1,6 @@
 # https://github.com/ahmetb/kubernetes-network-policy-recipes/blob/master/04-deny-traffic-from-other-namespaces.md
 # Deny all traffic from other namespaces
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 kind: NetworkPolicy
 apiVersion: networking.k8s.io/v1
 metadata:

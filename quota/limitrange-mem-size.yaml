@@ -1,0 +1,13 @@
+# https://hackernoon.com/top-10-kubernetes-tips-and-tricks-27528c2d0222
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+apiVersion: v1  
+ kind: LimitRange  
+ metadata:  
+   name: mem-limit-range  
+ spec:  
+   limits:  
+   - default:  
+       memory: 512Mi  
+     defaultRequest:  
+       memory: 256Mi  
+     type: Container

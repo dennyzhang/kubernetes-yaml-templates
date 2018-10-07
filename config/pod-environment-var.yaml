@@ -1,5 +1,6 @@
 # https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/
 # https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: v1
 kind: Pod
 metadata:

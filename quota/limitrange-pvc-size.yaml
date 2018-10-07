@@ -1,5 +1,6 @@
 # https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/
 # In this example, a PVC requesting 10Gi of storage would be rejected because it exceeds the 2Gi max.
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: v1
 kind: LimitRange
 metadata:

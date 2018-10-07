@@ -1,4 +1,5 @@
 # https://kubernetes.io/docs/tutorials/k8s201/
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:

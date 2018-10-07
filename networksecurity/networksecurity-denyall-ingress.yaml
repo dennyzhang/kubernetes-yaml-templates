@@ -1,4 +1,5 @@
 # https://kubernetes.io/docs/concepts/services-networking/network-policies/
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

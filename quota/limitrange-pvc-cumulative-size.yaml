@@ -1,5 +1,6 @@
 # https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/
 # In this example, a 6th PVC in the namespace would be rejected because it exceeds the maximum count of 5. 
+# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
 apiVersion: v1
 kind: ResourceQuota
 metadata:
