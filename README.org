@@ -18,6 +18,7 @@
 
 - PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/kubernetes/][kubernetes]]
 - Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-prometheus-A4][Prometheus CheatSheet]]
 
 File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.com/DennyZhang/kubernetes-yaml-templates][this repo]].
 
@@ -38,7 +39,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-gitclone.yaml][pod/pod-gitclone.yaml]]             | Pod: use initContainer as sidecar to web host a git repo   |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]          | Pod: add alias to /etc/hosts                               |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]             | Pod's events whenever it get started or stoppped           |
-| Links                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                                |
+| Links                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                                   |
 
 ** Configmap/Envs
 | Yaml                            | Summary                                   |
@@ -53,13 +54,13 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]] | Mount a local folder to pods                                        |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]        | Create a empty folder, then mount to pods                           |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-ebs.yaml][volume/volume-ebs.yaml]]             | Mount EBS volume to pod running in amazon instance with the same AZ |
-| Links                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][link: volumes examples]]           |
+| Links                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][Link: volumes examples]]                    |
 
 ** Security - RBAC
 | Yaml                             | Summary                     |
 |----------------------------------+-----------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/rbac/serviceaccount-default.yaml][rbac/serviceaccount-default.yaml]] | Serviceaccount: basic usage |
-| Links                            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]] |
+| Links                            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]    |
 
 ** Security - PodSecurityPolicy
 | Yaml                                    | Summary                                                         |
@@ -69,7 +70,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-restricted.yaml][podsecurity/podsecurity-restricted.yaml]] | Create pod security with restricted access, then apply it later |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-enforce.yaml][podsecurity/podsecurity-enforce.yaml]]    | Enforce policy security by defining role and cluster role       |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-advanced.yaml][podsecurity/podsecurity-advanced.yaml]]   | A more complicated definition of pod security policy            |
-| Links                                   | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                                     |
+| Links                                   | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                                        |
 
 ** Security - NetworkPolicy
 | Yaml                                                      | Summary                                        |
@@ -82,7 +83,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-port.yaml][networksecurity/networksecurity-port.yaml]]                 | Allow TCP 443 from one namespace               |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-deny-othernamespaces.yaml][networksecurity/networksecurity-deny-othernamespaces.yaml]] | Deny all ingress traffic from other namespaces |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyegress-exceptdns.yaml][networksecurity/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS             |
-| Links                                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                    |
+| Links                                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                       |
 | Links                                                     | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]]      |
 
 ** Quota & Limits
@@ -91,14 +92,14 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml][quota/limitrange-pvc-size.yaml]]            | LimitRange: PVC size                                  |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] | ResourceQuota: pvc count and storage size             |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-mem-size.yaml][quota/limitrange-mem-size.yaml]]            | LimitRange: Pod ram usage. Then apply it to namespace |
-| Links                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]                           |
+| Links                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                              |
 
 ** Deployment
 | Yaml                             | Summary                      |
 |----------------------------------+------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-nginx.yaml][deployment/deployment-nginx.yaml]] | Deploy nginx with 2 replicas |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-mysql.yaml][deployment/deployment-mysql.yaml]] | Deploy mysql                 |
-| Links                            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]  |
+| Links                            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]     |
 
 ** Statefulset
 | Yaml                                              | Summary                              |
@@ -107,7 +108,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-single-mysql][statefulset/statefulset-single-mysql]]              | Statefulset: mysql                   |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Statefulset: single cassandra        |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-mysql][statefulset/statefulset-replicated-mysql]]          | Statefulset: cassandra with replicas |
-| Links                                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]          |
+| Links                                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]             |
 
 ** Service
 | Yaml                                 | Summary                       |
@@ -116,7 +117,7 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-nodeport.yaml][service/service-nodeport.yaml]]        | Service: nodeport             |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-ingress.yaml][service/service-ingress.yaml]]         | Service: ingress              |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       | Service: cassandra            |
-| Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][link: kubernetes cheatsheet]]   |
+| Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]      |
 
 ** Jobs & CronJob
 | Yaml                  | Summary                         |
@@ -157,3 +158,4 @@ e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/mast
 #+LINK_UP:   
 #+LINK_HOME: 
 * update more link: https://github.com/uruddarraju/kubernetes-rbac-policies :noexport:
+* service with loadbalancer                                        :noexport:
