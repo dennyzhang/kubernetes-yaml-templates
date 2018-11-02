@@ -18,16 +18,9 @@
 
 - PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/kubernetes/][kubernetes]]
 - Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
-- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-prometheus-A4][Prometheus CheatSheet]]
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
 File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.com/DennyZhang/kubernetes-yaml-templates][this repo]].
-
-See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
-
-Note: for each yaml in below, you can find a related URL at the top. 
-
-e.g, here is [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-size.yaml#L1][an example]]
-
 ** Pod
 | Yaml                              | Summary                                                    |
 |-----------------------------------+------------------------------------------------------------|
