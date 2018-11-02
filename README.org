@@ -41,13 +41,14 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-env-metada.yaml][config/pod-env-metada.yaml]]      | Expose metadata to pods                   |
 
 ** Volume
-| Yaml                               | Summary                                                             |
-|------------------------------------+---------------------------------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-manual-pv.yaml][volume/volume-manual-pv.yaml]]       | Create pv first, then pvc                                           |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]] | Mount a local folder to pods                                        |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]        | Create a empty folder, then mount to pods                           |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-ebs.yaml][volume/volume-ebs.yaml]]             | Mount EBS volume to pod running in amazon instance with the same AZ |
-| Links                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][Link: volumes examples]]                    |
+| Yaml                               | Summary                                                                |
+|------------------------------------+------------------------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-manual-pv.yaml][volume/volume-manual-pv.yaml]]       | Create pv first, then pvc                                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]] | Mount a local folder to pods                                           |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]        | Create a empty folder, then mount to pods                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-ebs.yaml][volume/volume-ebs.yaml]]             | Mount EBS volume to pod running in amazon instance with the same AZ    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-digitalocean.yaml][volume/volume-digitalocean.yaml]]    | Create DigitalOcean volume for your kubernetes cluster in DigitalOcean |
+| Links                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][Link: volumes examples]]                       |
 
 ** Security - RBAC
 | Yaml                             | Summary                     |
