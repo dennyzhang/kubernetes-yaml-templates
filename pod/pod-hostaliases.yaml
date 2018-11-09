@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: v1
 kind: Pod
 metadata:

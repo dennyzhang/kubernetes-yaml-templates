@@ -3,7 +3,7 @@
 #    volume mounts, and environment variables etc into pods at creation time.
 # Create a podpreset with volume type of emptydir 
 # The new PodPreset will act upon any pod that has label role: frontend
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: settings.k8s.io/v1alpha1
 kind: PodPreset
 metadata:

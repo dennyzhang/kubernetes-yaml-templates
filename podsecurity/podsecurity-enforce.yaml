@@ -1,6 +1,6 @@
 # https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/bindings.yaml
 # restricted-psp-user grants access to use the restricted PSP.
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

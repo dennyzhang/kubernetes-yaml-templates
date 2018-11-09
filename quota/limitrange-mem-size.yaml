@@ -1,5 +1,5 @@
 # https://hackernoon.com/top-10-kubernetes-tips-and-tricks-27528c2d0222
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: v1  
  kind: LimitRange  
  metadata:  

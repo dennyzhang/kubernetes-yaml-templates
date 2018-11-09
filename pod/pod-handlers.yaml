@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: v1
 kind: Pod
 metadata:

@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/concepts/services-networking/ingress/
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:

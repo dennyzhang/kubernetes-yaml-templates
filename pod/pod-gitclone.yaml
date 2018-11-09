@@ -1,6 +1,6 @@
 # https://kubernetes.io/docs/tutorials/k8s101/
 # https://gist.github.com/tallclair/849601a16cebeee581ef2be50c351841
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: v1
 kind: Pod
 metadata:

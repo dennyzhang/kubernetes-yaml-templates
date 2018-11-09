@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/concepts/storage/volumes/
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: v1
 kind: Pod
 metadata:

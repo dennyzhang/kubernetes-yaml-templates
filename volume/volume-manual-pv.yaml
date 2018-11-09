@@ -1,4 +1,4 @@
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 kind: PersistentVolume
 apiVersion: v1
 metadata:

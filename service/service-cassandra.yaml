@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/tutorials/stateful-application/cassandra/
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: v1
 kind: Service
 metadata:

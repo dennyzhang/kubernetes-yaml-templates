@@ -5,7 +5,7 @@
 #
 #     The egress traffic
 #         It can only goes to port 5978 of 10.0.0.0/24
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

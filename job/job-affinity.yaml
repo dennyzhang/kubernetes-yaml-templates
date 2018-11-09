@@ -1,5 +1,5 @@
 # https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
-# https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 apiVersion: batch/v1
 kind: Job
 metadata:
