@@ -33,13 +33,11 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-hostaliases.yaml][pod/pod-hostaliases.yaml]]          | Pod: add alias to /etc/hosts                               |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]             | Pod's events whenever it get started or stoppped           |
 | Links                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                                   |
-
 ** Configmap/Envs
 | Yaml                            | Summary                                   |
 |---------------------------------+-------------------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-environment-var.yaml][config/pod-environment-var.yaml]] | Start a pod passing environment variables |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-env-metada.yaml][config/pod-env-metada.yaml]]      | Expose metadata to pods                   |
-
 ** Volume
 | Yaml                               | Summary                                                                |
 |------------------------------------+------------------------------------------------------------------------|
@@ -49,13 +47,11 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-ebs.yaml][volume/volume-ebs.yaml]]             | Mount EBS volume to pod running in amazon instance with the same AZ    |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-digitalocean.yaml][volume/volume-digitalocean.yaml]]    | Create DigitalOcean volume for your kubernetes cluster in DigitalOcean |
 | Links                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][Link: volumes examples]]                       |
-
 ** Security - RBAC
 | Yaml                             | Summary                     |
 |----------------------------------+-----------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/rbac/serviceaccount-default.yaml][rbac/serviceaccount-default.yaml]] | Serviceaccount: basic usage |
 | Links                            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]    |
-
 ** Security - PodSecurityPolicy
 | Yaml                                    | Summary                                                         |
 |-----------------------------------------+-----------------------------------------------------------------|
@@ -64,8 +60,11 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-restricted.yaml][podsecurity/podsecurity-restricted.yaml]] | Create pod security with restricted access, then apply it later |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-enforce.yaml][podsecurity/podsecurity-enforce.yaml]]    | Enforce policy security by defining role and cluster role       |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-advanced.yaml][podsecurity/podsecurity-advanced.yaml]]   | A more complicated definition of pod security policy            |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/podsecurity/podsecurity-example.yaml][podsecurity/podsecurity-example.yaml]]    | A full example with everything included                         |
 | Links                                   | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                                        |
-
+#+BEGIN_HTML
+<a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
+#+END_HTML
 ** Security - NetworkPolicy
 | Yaml                                                      | Summary                                        |
 |-----------------------------------------------------------+------------------------------------------------|
@@ -79,7 +78,6 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyegress-exceptdns.yaml][networksecurity/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS             |
 | Links                                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                       |
 | Links                                                     | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]]      |
-
 ** Quota & Limits
 | Yaml                                      | Summary                                               |
 |-------------------------------------------+-------------------------------------------------------|
@@ -87,14 +85,12 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-pvc-cumulative-size.yaml][quota/limitrange-pvc-cumulative-size.yaml]] | ResourceQuota: pvc count and storage size             |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/quota/limitrange-mem-size.yaml][quota/limitrange-mem-size.yaml]]            | LimitRange: Pod ram usage. Then apply it to namespace |
 | Links                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                              |
-
 ** Deployment
 | Yaml                             | Summary                      |
 |----------------------------------+------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-nginx.yaml][deployment/deployment-nginx.yaml]] | Deploy nginx with 2 replicas |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/deployment/deployment-mysql.yaml][deployment/deployment-mysql.yaml]] | Deploy mysql                 |
 | Links                            | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]     |
-
 ** Statefulset
 | Yaml                                              | Summary                              |
 |---------------------------------------------------+--------------------------------------|
@@ -103,7 +99,6 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Statefulset: single cassandra        |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-mysql][statefulset/statefulset-replicated-mysql]]          | Statefulset: cassandra with replicas |
 | Links                                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]             |
-
 ** Service
 | Yaml                                 | Summary                       |
 |--------------------------------------+-------------------------------|
@@ -112,12 +107,10 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-ingress.yaml][service/service-ingress.yaml]]         | Service: ingress              |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       | Service: cassandra            |
 | Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]      |
-
 ** Jobs & CronJob
 | Yaml                  | Summary                         |
 |-----------------------+---------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/job/job-affinity.yaml][job/job-affinity.yaml]] | Deploy a job with node affinity |
-
 ** More Resources
  License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
 
@@ -128,8 +121,8 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 #+END_HTML
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone showall
-#+DESCRIPTION: 
-#+KEYWORDS: 
+#+DESCRIPTION:
+#+KEYWORDS:
 #+LATEX_HEADER: \usepackage[margin=0.6in]{geometry}
 #+LaTeX_CLASS_OPTIONS: [8pt]
 #+LATEX_HEADER: \usepackage[english]{babel}
@@ -149,7 +142,13 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+EXPORT_EXCLUDE_TAGS: exclude noexport
 #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
-#+LINK_UP:   
-#+LINK_HOME: 
+#+LINK_UP:
+#+LINK_HOME:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
 * update more link: https://github.com/uruddarraju/kubernetes-rbac-policies :noexport:
 * service with loadbalancer                                        :noexport:
+* DONE [#A] k8s yaml file                                          :noexport:
+  CLOSED: [2017-12-01 Fri 22:45]
+http://containertutorials.com/get_started_kubernetes/k8s_example.html
+https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/
+https://kubernetes.io/docs/concepts/storage/volumes/#emptydir
