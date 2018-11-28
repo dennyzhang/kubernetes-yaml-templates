@@ -1,0 +1,5 @@
+# https://github.com/kubernetes/kubernetes/blob/v1.14.0-alpha.0/cluster/addons/addon-manager/namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-dummy

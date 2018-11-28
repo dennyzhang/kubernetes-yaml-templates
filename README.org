@@ -1,4 +1,4 @@
-* Kubernetes Yaml Templates                                      :Kubernetes:
+* Kubernetes Yaml Templates                                      :Cloud:
 :PROPERTIES:
 :type:     kubernetes
 :export_file_name: kubernetes-yaml-templates.pdf
@@ -9,14 +9,14 @@
 <div id="the whole thing" style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 
 <br/><br/>
 <a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
 #+END_HTML
 
-- PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/kubernetes/][kubernetes]]
+- PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/cloud/][Cloud]]
 - Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 - Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
@@ -66,18 +66,18 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 <a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 #+END_HTML
 ** Security - NetworkPolicy
-| Yaml                                                      | Summary                                        |
-|-----------------------------------------------------------+------------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyall-ingress.yaml][networksecurity/networksecurity-denyall-ingress.yaml]]      | Allow all ingress                              |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-allowall-ingress.yaml][networksecurity/networksecurity-allowall-ingress.yaml]]     | Deny all ingress                               |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyall.yaml][networksecurity/networksecurity-denyall.yaml]]              | Deny all ingress and egress                    |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-pod.yaml][networksecurity/networksecurity-pod.yaml]]                  | Whitelist traffic control                      |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-complicated.yaml][networksecurity/networksecurity-complicated.yaml]]          | A comprehensive network policy example         |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-port.yaml][networksecurity/networksecurity-port.yaml]]                 | Allow TCP 443 from one namespace               |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-deny-othernamespaces.yaml][networksecurity/networksecurity-deny-othernamespaces.yaml]] | Deny all ingress traffic from other namespaces |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyegress-exceptdns.yaml][networksecurity/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS             |
-| Links                                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                       |
-| Links                                                     | [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]]      |
+| Yaml                                                      | Summary                                                             |
+|-----------------------------------------------------------+---------------------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyall-ingress.yaml][networksecurity/networksecurity-denyall-ingress.yaml]]      | Allow all ingress                                                   |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-allowall-ingress.yaml][networksecurity/networksecurity-allowall-ingress.yaml]]     | Deny all ingress                                                    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyall.yaml][networksecurity/networksecurity-denyall.yaml]]              | Deny all ingress and egress                                         |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-pod.yaml][networksecurity/networksecurity-pod.yaml]]                  | Whitelist traffic control                                           |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-complicated.yaml][networksecurity/networksecurity-complicated.yaml]]          | A comprehensive network policy example                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-port.yaml][networksecurity/networksecurity-port.yaml]]                 | Allow TCP 443 from one namespace                                    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-deny-othernamespaces.yaml][networksecurity/networksecurity-deny-othernamespaces.yaml]] | Deny all ingress traffic from other namespaces                      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/networksecurity/networksecurity-denyegress-exceptdns.yaml][networksecurity/networksecurity-denyegress-exceptdns.yaml]] | Deny all egress traffic except DNS                                  |
+| Links                                                     | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/ahmetb/kubernetes-network-policy-recipes][GitHub: kubernetes-network-policy-recipes]] |
+
 ** Quota & Limits
 | Yaml                                      | Summary                                               |
 |-------------------------------------------+-------------------------------------------------------|
@@ -107,6 +107,10 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-ingress.yaml][service/service-ingress.yaml]]         | Service: ingress              |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       | Service: cassandra            |
 | Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]      |
+** General
+| Yaml                    | Summary                  |
+|-------------------------+--------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/namespace/ns-dummy.yaml][namespace/ns-dummy.yaml]] | Create a dummy namespace |
 ** Jobs & CronJob
 | Yaml                  | Summary                         |
 |-----------------------+---------------------------------|
@@ -152,3 +156,5 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 http://containertutorials.com/get_started_kubernetes/k8s_example.html
 https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/
 https://kubernetes.io/docs/concepts/storage/volumes/#emptydir
+* TODO [#A] PR: add my yaml examples to https://github.com/kubernetes/examples :noexport:
+* TODO yaml cheatsheet: https://jimmysong.io/cheatsheets/yaml      :noexport:
