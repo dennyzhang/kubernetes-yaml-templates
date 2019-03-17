@@ -20,7 +20,7 @@
 - Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
 - Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
-File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.com/DennyZhang/kubernetes-yaml-templates][this repo]].
+File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.cxom/DennyZhang/kubernetes-yaml-templates][this repo]].
 ** Pod
 | Yaml                              | Summary                                                    |
 |-----------------------------------+------------------------------------------------------------|
@@ -38,6 +38,7 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 |---------------------------------+-------------------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-environment-var.yaml][config/pod-environment-var.yaml]] | Start a pod passing environment variables |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-env-metada.yaml][config/pod-env-metada.yaml]]      | Expose metadata to pods                   |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/configmap-plaintext.yaml][config/configmap-plaintext.yaml]] | Define configmap with plain text          |
 ** Volume
 | Yaml                               | Summary                                                                |
 |------------------------------------+------------------------------------------------------------------------|
@@ -102,9 +103,10 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 ** Service
 | Yaml                                 | Summary                       |
 |--------------------------------------+-------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-clusterip-nginx.yaml][service/service-clusterip-nginx.yaml]] | Service: nginx with clusterip |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-loadbalancer.yaml][service/service-loadbalancer.yaml]]    | Service: loadbalancer         |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-nodeport.yaml][service/service-nodeport.yaml]]        | Service: nodeport             |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-ingress.yaml][service/service-ingress.yaml]]         | Service: ingress              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-clusterip-nginx.yaml][service/service-clusterip-nginx.yaml]] | Service: nginx with clusterip |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/service/service-cassandra.yaml][service/service-cassandra.yaml]]       | Service: cassandra            |
 | Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]      |
 ** General
@@ -115,8 +117,13 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | Yaml                  | Summary                         |
 |-----------------------+---------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/job/job-affinity.yaml][job/job-affinity.yaml]] | Deploy a job with node affinity |
+** Related Tools
+| Name                              | Summary                                         |
+|-----------------------------------+-------------------------------------------------|
+| [[https://github.com/kubernetes-sigs/kustomize][GitHub: kubernetes-sigs/kustomize]] | Customization of kubernetes YAML configurations |
+
 ** More Resources
- License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
 
 #+BEGIN_HTML
 <a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
