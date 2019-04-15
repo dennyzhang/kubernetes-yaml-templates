@@ -18,9 +18,9 @@
 
 - PDF Link: [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/kubernetes-yaml-templates.pdf][kubernetes-yaml-templates.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/cloud/][Cloud]]
 - Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
-- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Kubectl CheatSheet]], [[https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates][Kubernetes Yaml]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
-File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.cxom/DennyZhang/kubernetes-yaml-templates][this repo]].
+File me [[https://github.codm/dennyzhang/kubernetes-yaml-templates/issues][Issues]] or star [[https://github.cxom/DennyZhang/kubernetes-yaml-templates][this repo]].
 ** Pod
 | Yaml                              | Summary                                                    |
 |-----------------------------------+------------------------------------------------------------|
@@ -34,20 +34,22 @@ File me [[https://github.com/dennyzhang/kubernetes-yaml-templates/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/pod/pod-handlers.yaml][pod/pod-handlers.yaml]]             | Pod's events whenever it get started or stoppped           |
 | Links                             | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]                                   |
 ** Configmap/Envs
-| Yaml                            | Summary                                   |
-|---------------------------------+-------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-environment-var.yaml][config/pod-environment-var.yaml]] | Start a pod passing environment variables |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-env-metada.yaml][config/pod-env-metada.yaml]]      | Expose metadata to pods                   |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/configmap-plaintext.yaml][config/configmap-plaintext.yaml]] | Define configmap with plain text          |
+| Yaml                            | Summary                                                 |
+|---------------------------------+---------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-configmap.yaml][config/pod-configmap.yaml]]       | Create configmap from file, then use it as a pod volume |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-environment-var.yaml][config/pod-environment-var.yaml]] | Start a pod passing environment variables               |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/pod-env-metada.yaml][config/pod-env-metada.yaml]]      | Expose metadata to pods                                 |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/config/configmap-plaintext.yaml][config/configmap-plaintext.yaml]] | Define configmap with plain text                        |
 ** Volume
-| Yaml                               | Summary                                                                |
-|------------------------------------+------------------------------------------------------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-manual-pv.yaml][volume/volume-manual-pv.yaml]]       | Create pv first, then pvc                                              |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]] | Mount a local folder to pods                                           |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]        | Create a empty folder, then mount to pods                              |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-ebs.yaml][volume/volume-ebs.yaml]]             | Mount EBS volume to pod running in amazon instance with the same AZ    |
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-digitalocean.yaml][volume/volume-digitalocean.yaml]]    | Create DigitalOcean volume for your kubernetes cluster in DigitalOcean |
-| Links                              | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][Link: volumes examples]]                       |
+| Yaml                                 | Summary                                                                |
+|--------------------------------------+------------------------------------------------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-manual-pv.yaml][volume/volume-manual-pv.yaml]]         | Create pv first, then pvc                                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-mount-localpath.yaml][volume/volume-mount-localpath.yaml]]   | Mount a local folder to pods                                           |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-emptydir.yaml][volume/volume-emptydir.yaml]]          | Create a empty folder, then mount to pods                              |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-ebs.yaml][volume/volume-ebs.yaml]]               | Mount EBS volume to pod running in amazon instance with the same AZ    |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-gcePersistentDisk.yaml][volume/volume-gcePersistentDisk.yaml]] | Mount GCE disk to pod running in amazon instance with the same AZ      |
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/volume/volume-digitalocean.yaml][volume/volume-digitalocean.yaml]]      | Create DigitalOcean volume for your kubernetes cluster in DigitalOcean |
+| Links                                | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]], [[https://github.com/kubernetes/examples/tree/master/staging/volumes][Link: volumes examples]]                       |
 ** Security - RBAC
 | Yaml                             | Summary                     |
 |----------------------------------+-----------------------------|
