@@ -1,0 +1,10 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: monkeys.my.com
+spec:
+  group: my.com
+  version: v1
+  names:
+    plural: monkeys
+    kind: Monkey
