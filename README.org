@@ -114,10 +114,6 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-cassandra.yaml][statefulset/statefulset-replicated-cassandra.yaml]] | Statefulset: single cassandra        |
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/statefulset/statefulset-replicated-mysql][statefulset/statefulset-replicated-mysql]]          | Statefulset: cassandra with replicas |
 | Reference                                         | [[https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4][Link: kubectl cheatsheet]]             |
-** General
-| Yaml                    | Summary                  |
-|-------------------------+--------------------------|
-| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/namespace/ns-dummy.yaml][namespace/ns-dummy.yaml]] | Create a dummy namespace |
 ** Jobs & CronJob
 | Yaml                  | Summary                         |
 |-----------------------+---------------------------------|
@@ -126,6 +122,10 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 | Yaml                  | Summary                         |
 |-----------------------+---------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/hpa/hpa-nginx.yaml][hpa/hpa-nginx.yaml]] | Deploy a horizontal pod autoscaler for nginx deployment |
+** Adhoc
+| Yaml                    | Summary                  |
+|-------------------------+--------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/namespace/ns-dummy.yaml][namespace/ns-dummy.yaml]] | Create a dummy namespace |
 ** Related Tools
 | Name                              | Summary                                         |
 |-----------------------------------+-------------------------------------------------|
@@ -153,7 +153,7 @@ License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_lice
 #+LATEX_HEADER: \rhead{Updated: \today}
 #+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
 #+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/kubernetes-yaml-templates}{GitHub: https://github.com/dennyzhang/kubernetes-yaml-templates}}
-#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-slack-A4}{Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates}{Blog URL: https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates}}
 #+AUTHOR: Denny Zhang
 #+EMAIL:  denny@dennyzhang.com
 #+TAGS: noexport(n)
