@@ -122,6 +122,10 @@ File me [[https://github.com/dennyzhang/cheatsheet.dennyzhang.com/issues][Issues
 | Yaml                  | Summary                         |
 |-----------------------+---------------------------------|
 | [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/job/job-affinity.yaml][job/job-affinity.yaml]] | Deploy a job with node affinity |
+** HorizontalPodAutoscaler
+| Yaml                  | Summary                         |
+|-----------------------+---------------------------------|
+| [[https://github.com/dennyzhang/kubernetes-yaml-templates/blob/master/hpa/hpa-nginx.yaml][hpa/hpa-nginx.yaml]] | Deploy a horizontal pod autoscaler for nginx deployment |
 ** Related Tools
 | Name                              | Summary                                         |
 |-----------------------------------+-------------------------------------------------|
